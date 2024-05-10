@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://eteration.com/tr" target="blank"><img src="https://eteration.com/api/image/storage/uploads/2019/11/14/5dcd5f9465c3beteration-logo.png" width="300" alt="Eteration Logo" /></a>
+  <a href="https://eteration.com/tr" target="_blank" rel="noopener noreferrer"><img src="https://eteration.com/api/image/storage/uploads/2019/11/14/5dcd5f9465c3beteration-logo.png" width="300" alt="Eteration Logo" /></a>
 </p>
 
   <p align="center">Eteration Backend Case is an API that retrieves data from The Movie Database (TMDB). It allows users to perform CRUD operations on movies, such as creating, reading, updating, and deleting movie data.</p>
@@ -16,6 +16,8 @@ $ npm install
 ```
 
 ## Running the app
+
+**Docker** and **PostgreSQL** should be installed for database connection.
 
 ```bash
 # database

@@ -8,7 +8,7 @@ export class TmdbService {
   private readonly baseUrl: string = 'https://api.themoviedb.org/3';
 
   constructor(private prisma: PrismaService) {
-    this.apiKey = '43a7c3e71f91aaf2d91a840d64137778'; // process.env.TMDB_API_KEY;
+    this.apiKey = process.env.TMDB_API_KEY;
   }
 
   async fetchMovies(): Promise<any> {
