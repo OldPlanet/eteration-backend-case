@@ -1,0 +1,90 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/movies": {
+      "post": {
+        "operationId": "MoviesController_save",
+        "summary": "Create a new movie entity.",
+        "parameters": [],
+        "responses": {
+          "201": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Movies"
+        ]
+      },
+      "get": {
+        "operationId": "MoviesController_findAll",
+        "summary": "Get all the movie entities.",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Movies"
+        ]
+      }
+    },
+    "/movies/{id}": {
+      "get": {
+        "operationId": "MoviesController_findById",
+        "summary": "Get a movie entity with the id.",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Movies"
+        ]
+      },
+      "delete": {
+        "operationId": "MoviesController_removeById",
+        "summary": "Delete a movie entity with the id.",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        },
+        "tags": [
+          "Movies"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Eteration Backend Case API",
+    "description": "There are 5 movies data fetched from TMDB (The Movie Database). The movies are the oldest ones with average vote count of 1500, with average vote of 8.4, on Netflix platform, and in Turkey. There are 4 types of CRUD operations which are POST a movie, GET a movie with the id, GET all the movies, and DELETE a movie with id.",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": {
+    "schemas": {}
+  }
+}
