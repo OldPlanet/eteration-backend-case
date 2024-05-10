@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://eteration.com/tr" target="blank"><img src="https://eteration.com/api/image/storage/uploads/2019/11/14/5dcd5f9465c3beteration-logo.png" width="300" background-color="#252525" alt="Eteration Logo" /></a>
+  <a href="https://eteration.com/tr" target="blank"><img src="https://eteration.com/api/image/storage/uploads/2019/11/14/5dcd5f9465c3beteration-logo.png" width="300" alt="Eteration Logo" /></a>
 </p>
 
   <p align="center">Eteration Backend Case is an API that retrieves data from The Movie Database (TMDB). It allows users to perform CRUD operations on movies, such as creating, reading, updating, and deleting movie data.</p>
@@ -43,3 +43,16 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Usage
+
+Once the project is set up, you can use the API to perform various operations on movies. Here are some examples:
+
+- **POST** a movie: Create a new movie by sending a POST request with movie data to the appropriate endpoint.
+- **GET** a movie: Retrieve a specific movie by its ID using a GET request to the appropriate endpoint.
+- **GET** all movies: Retrieve a list of all movies using a GET request to the appropriate endpoint.
+- **DELETE** a movie: Delete a movie by its ID using a DELETE request to the appropriate endpoint.
+
+## API Documentation
+
+The API documentation can be accessed using the `/api` URL from the project. Additionally, an OpenAPI Specification (formerly Swagger Specification) file named `openapi.json` is included in the project for reference.
